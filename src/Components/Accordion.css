@@ -15,6 +15,7 @@
 
 .accordion__title {
 	font-weight: 500;
+	font-size: 1em;
 }
 
 .accordion__icon {
@@ -93,4 +94,24 @@
 
 .pro:hover {
 	color: #1f50a4;
+}
+
+.discord__container {
+	padding: 15px;
+	border: solid 1px #f5f4f6;
+	border-radius: 0 0 15px 15px;
+}
+
+.discord__container img {
+	cursor: pointer;
+	width: 50%;
+}
+
+.discord__container h3 {
+	font-size: 1em;
+	margin-block: 10px;
+}
+
+.discord__container p {
+	font-size: 0.85em;
 }

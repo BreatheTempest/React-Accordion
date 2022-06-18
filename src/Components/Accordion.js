@@ -26,7 +26,7 @@ export default function Accordion(props) {
 				onClick={toggleAccordion}
 			>
 				<img src={props.icon} alt="" className="icon" />
-				<p className="accordion__title">{props.title}</p>
+				<h3 className="accordion__title">{props.title}</h3>
 				<Chevron
 					width={7}
 					fill={'#777'}

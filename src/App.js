@@ -3,6 +3,7 @@ import Accordion from './Components/Accordion';
 import sortIcon from './Icons/sliders-solid.svg';
 import moreIcon from './Icons/add.svg';
 import checkMarkIcon from './Icons/check-mark.svg';
+import discordLogo from './Icons/discord.png';
 
 export default function App() {
 	const [activeItem, setActiveItem] = useState('Latest');
@@ -57,6 +58,14 @@ export default function App() {
 				border="top"
 			/>
 			<Accordion title="More Things to do" jsx={thingsGrid} icon={moreIcon} />
+			<div className="discord__container">
+				<img src={discordLogo} alt="" />
+				<h3>DevDojo Discord</h3>
+				<p>
+					Join the DevDojo Community Discord server and connect with other like
+					minded developers!
+				</p>
+			</div>
 		</div>
 	);
 }
