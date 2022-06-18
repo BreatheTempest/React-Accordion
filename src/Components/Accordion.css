@@ -1,0 +1,32 @@
+.accordion {
+	display: flex;
+	border: none;
+	width: 100%;
+	padding: 15px;
+	transition: background-color 300ms;
+}
+
+.accordion:hover,
+.active {
+	background-color: #ccc;
+}
+
+.accordion__icon {
+	margin-left: auto;
+	transition: transform 300ms;
+}
+
+.rotate {
+	transform: rotate(90deg);
+}
+
+.accordion__text {
+	padding: 5px;
+	font-size: 0.9em;
+}
+
+.accordion__content {
+	overflow: hidden;
+	transition: max-height 300ms;
+	max-height: 0;
+}
