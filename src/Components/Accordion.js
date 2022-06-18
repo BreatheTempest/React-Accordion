@@ -21,10 +21,14 @@ export default function Accordion(props) {
 
 	return (
 		<div className="accordion__section">
-			<button className={`accordion ${active}`} onClick={toggleAccordion}>
+			<button
+				className={`accordion ${active} ${props.border}`}
+				onClick={toggleAccordion}
+			>
+				<img src={props.icon} alt="" className="icon" />
 				<p className="accordion__title">{props.title}</p>
 				<Chevron
-					width={10}
+					width={7}
 					fill={'#777'}
 					className={`accordion__icon ${rotate}`}
 				/>
@@ -34,10 +38,7 @@ export default function Accordion(props) {
 				style={{ maxHeight: `${height}` }}
 				className="accordion__content"
 			>
-				<div
-					className="accordion__text"
-					dangerouslySetInnerHTML={{ __html: props.content }}
-				></div>
+				<div className="accordion__text">{props.jsx}</div>
 			</div>
 		</div>
 	);

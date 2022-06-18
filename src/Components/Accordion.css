@@ -1,32 +1,96 @@
 .accordion {
 	display: flex;
-	border: none;
+	justify-content: center;
+	align-items: center;
+	border: solid 1px #f5f4f6;
+	background-color: white;
 	width: 100%;
-	padding: 15px;
+	padding: 20px;
 	transition: background-color 300ms;
 }
 
-.accordion:hover,
-.active {
-	background-color: #ccc;
+.top {
+	border-radius: 15px 15px 0 0;
+}
+
+.accordion__title {
+	font-weight: 500;
 }
 
 .accordion__icon {
 	margin-left: auto;
 	transition: transform 300ms;
+	transform: rotate(90deg);
 }
 
 .rotate {
-	transform: rotate(90deg);
+	transform: rotate(270deg);
 }
 
 .accordion__text {
 	padding: 5px;
 	font-size: 0.9em;
+	background-color: #f5f4f6;
 }
 
 .accordion__content {
 	overflow: hidden;
 	transition: max-height 300ms;
 	max-height: 0;
+}
+
+.icon {
+	width: 13px;
+	margin-right: 10px;
+}
+
+.item__icon {
+	width: 13px;
+	margin-right: 10px;
+	transform: scale(0);
+	transition: transform 300ms;
+}
+
+.item {
+	margin: 10px;
+	font-size: 0.8rem;
+	color: #777;
+	transition: color 300ms;
+	cursor: pointer;
+}
+
+.item:hover .item__icon,
+.active__item .item__icon {
+	transform: scale(1);
+}
+
+.item:hover,
+.active__item {
+	color: #333;
+}
+
+.grid__container {
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+.thing {
+	cursor: pointer;
+	color: #333;
+	font-size: 0.85em;
+}
+
+.thing:hover {
+	color: black;
+}
+
+.pro {
+	color: #275bb8;
+	font-weight: 700;
+}
+
+.pro:hover {
+	color: #1f50a4;
 }
